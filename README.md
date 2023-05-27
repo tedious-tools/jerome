@@ -1,7 +1,7 @@
-# Rot13
+# Jerome
 
-Makes Rot13 text from the command line
+Makes Rot13 text from the command line. Named for Saint Jerome, who was a translator.
 
 ```
-$ rot13 some cool text
+$ jerome some cool text
 ```
