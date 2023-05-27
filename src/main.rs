@@ -20,7 +20,7 @@ fn main() -> Result<()> {
         },
     };
 
-    let translated = rot13::rot13(&msg)?;
+    let translated = jerome::rot13(&msg)?;
 
     println!("Translated gets you: \n{}", translated);
 

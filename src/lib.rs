@@ -48,7 +48,7 @@ impl Translator {
     /// # Examples
     /// ```
     /// let original = "Zapper man".to_string();
-    /// assert_eq!("mnccre zna".to_string(), rot13::Translator::new().rot13(&original).unwrap());
+    /// assert_eq!("mnccre zna".to_string(), jerome::Translator::new().rot13(&original).unwrap());
     /// ```
     pub fn rot13(&self, plaintext: &String) -> Result<String> {
         let plaintext = plaintext.to_ascii_lowercase();
@@ -73,7 +73,7 @@ impl Translator {
 /// # Examples
 /// ```
 /// let original = "Zapper man".to_string();
-/// assert_eq!("mnccre zna".to_string(), rot13::rot13(&original).unwrap());
+/// assert_eq!("mnccre zna".to_string(), jerome::rot13(&original).unwrap());
 /// ```
 pub fn rot13(plaintext: &String) -> Result<String> {
     Translator::new().rot13(plaintext)

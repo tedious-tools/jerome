@@ -1,11 +1,11 @@
 [package]
-name = "rot13"
+name = "jerome"
 version = "0.1.0"
 edition = "2021"
 authors = ["Jon Anderson <coding@jpanderson.dev>"]
 license = "MIT"
 description = "Does ROT13 decoding/encoding"
-repository = "https://github.com/tedious-tools/asdfler"
+repository = "https://github.com/tedious-tools/jerome"
 keywords = ["cli", "asdf"]
 categories = ["command-line-utilities"]
 
