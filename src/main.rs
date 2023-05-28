@@ -3,6 +3,10 @@ use std::env;
 use anyhow::{bail, Result};
 
 fn main() -> Result<()> {
+    let translator = jerome::Translator::new();
+
+    translator.caesar(&String::from("doggy man"), 13)?;
+
     let args: Vec<String> = env::args().collect();
 
     if args.len() == 1 {

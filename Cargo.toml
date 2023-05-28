@@ -1,6 +1,6 @@
 [package]
 name = "jerome"
-version = "0.1.0"
+version = "0.2.0-dev"
 edition = "2021"
 authors = ["Jon Anderson <coding@jpanderson.dev>"]
 license = "MIT"
