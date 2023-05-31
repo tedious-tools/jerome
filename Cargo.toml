@@ -14,6 +14,7 @@ categories = ["command-line-utilities"]
 [dependencies]
 cli-clipboard = "0.4.0"
 anyhow = "1.0"
+clap = { version = "4.3.0", features = ["derive", "cargo"] }
 
 [dev-dependencies]
 tokio-test = "0.4"
