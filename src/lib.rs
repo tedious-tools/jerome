@@ -8,7 +8,7 @@ pub struct Translator {
 
 impl Translator {
     pub fn new() -> Translator {
-        Translator{
+        Translator {
             alphabet: ('a'..='z').collect(),
         }
     }
@@ -62,7 +62,10 @@ impl Translator {
 
                 translated.push(new_letter);
             } else {
-                bail!("Found a character we didn't expect or know how to handle: {}", c);
+                bail!(
+                    "Found a character we didn't expect or know how to handle: {}",
+                    c
+                );
             }
         }
 
@@ -83,13 +86,13 @@ pub fn rot13(plaintext: &String) -> Result<String> {
 }
 
 /// Encodes/decodes a given text using any Caesar rotation cipher.
-    ///
-    /// # Examples
-    ///
-    /// ```
-    /// let original = "Faces".to_string();
-    /// assert_eq!("Idfhv".to_string(), jerome::caesar(&original, 3).unwrap());
-    /// ```
+///
+/// # Examples
+///
+/// ```
+/// let original = "Faces".to_string();
+/// assert_eq!("Idfhv".to_string(), jerome::caesar(&original, 3).unwrap());
+/// ```
 pub fn caesar(plaintext: &String, shift: usize) -> Result<String> {
     Translator::new().caesar(plaintext, shift)
 }
