@@ -20,9 +20,11 @@ fn main() -> Result<()> {
         _ => {
             let text = &args[1..];
 
-            text[2..].iter().fold(args[1].clone(), |accumulator, val| format!("{} {}", accumulator, val))
+            text[1..].iter().fold(args[1].clone(), |accumulator, val| format!("{} {}", accumulator, val))
         },
     };
+
+    println!("Message is: {}", msg);
 
     let translated = jerome::rot13(&msg)?;
 
